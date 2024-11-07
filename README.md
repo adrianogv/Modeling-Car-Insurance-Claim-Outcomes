@@ -1,12 +1,42 @@
-# Modeling-Car-Insurance-Claim-Outcomes
-Modeling Car Insurance Claim Outcomes
+# Car Insurance Claim Prediction Project
 
-**About**:
-Insurance companies invest a lot of time and money into optimizing their pricing and accurately estimating the likelihood that customers will make a claim. In many countries insurance it is a legal requirement to have car insurance in order to drive a vehicle on public roads, so the market is very large!
+This project analyzes factors affecting the likelihood of car insurance claims. Using **logistic regression models**, it identifies significant predictors to help insurers assess risk and improve decision-making.
 
-Knowing all of this, On the Road car insurance have requested your services in building a model to predict whether a customer will make a claim on their insurance during the policy period. As they have very little expertise and infrastructure for deploying and monitoring machine learning models, they've asked you to identify the single feature that results in the best performing model, as measured by accuracy, so they can start with a simple model in production.
+## Project Overview
 
-They have supplied you with their customer data as a csv file called car_insurance.csv, along with a table detailing the column names and descriptions below.
+Insurance companies rely on data to assess the risk associated with different policyholders. This project uses a dataset of car insurance clients and explores various demographic, financial, and vehicle-related features to predict claim likelihood.
 
-**Note: I used logistic regression for this project.**
+## Dataset
+
+The dataset includes the following key columns:
+
+- `age`: Age of the client
+- `gender`: Gender of the client
+- `driving_experience`: Years of driving experience categorized into ranges
+- `education`: Education level of the client
+- `income`: Income category
+- `credit_score`: Numerical credit score of the client
+- `vehicle_ownership`: Indicator of whether the client owns their vehicle
+- `vehicle_year`: Year of the vehicle’s registration
+- `married`: Marital status of the client
+- `children`: Number of children
+- `annual_mileage`: Annual mileage driven
+- `vehicle_type`: Type of vehicle (e.g., sedan, sports car)
+- `speeding_violations`: Number of speeding violations
+- `duis`: Number of driving under the influence (DUI) incidents
+- `past_accidents`: Number of past accidents
+- `outcome`: Target variable indicating whether the client made an insurance claim
+
+## Key Findings
+
+The project identified **driving experience** as the most influential predictor, with an accuracy of **77.71%** in the model. This insight suggests that driving experience is a strong indicator of claim likelihood, potentially guiding insurance premium calculations and risk assessments.
+
+
+## Future Work
+
+Further exploration could include:
+
+- Building a multi-feature logistic regression model to capture interaction effects between variables.
+- Investigating the impact of other demographic factors on claim frequency.
+- Testing different machine learning models (e.g., decision trees, SVMs) to improve prediction accuracy.
 
